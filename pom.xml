@@ -11,10 +11,34 @@
 
     <name>CF Template Generator</name>
     <description>Java based Generator for AWS Cloud formation template</description>
+    <url>https://github.com/blockwiseph</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Hiten Vasnani</name>
+            <email>hvas89@gmail.com</email>
+            <organization>org.blockwiseph</organization>
+            <organizationUrl>https://github.com/blockwiseph</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/blockwiseph/cftemplategenerator.git</connection>
+        <developerConnection>scm:git:ssh://github.com:blockwiseph/cftemplategenerator.git</developerConnection>
+        <url>http://github.com/blockwiseph/cftemplategenerator</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>

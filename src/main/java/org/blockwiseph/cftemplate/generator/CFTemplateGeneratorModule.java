@@ -11,6 +11,13 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import lombok.AllArgsConstructor;
 
+/**
+ * Guice Module to instantiate the CFTemplateGenerator.
+ * This module should be instantiated with a template file path, and a list of top level section builders.
+ *
+ * Once this module is instantiated, an object of @see org.blockwiseph.cftemplate.generator.CFTemplateGenerator}
+ * should be obtained from here.
+ */
 @AllArgsConstructor
 public class CFTemplateGeneratorModule extends AbstractModule {
 

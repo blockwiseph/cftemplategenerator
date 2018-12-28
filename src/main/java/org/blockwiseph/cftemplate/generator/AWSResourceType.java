@@ -3,6 +3,9 @@ package org.blockwiseph.cftemplate.generator;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 
+/**
+ * Enum containing the different AWS Resource types that can be put in a cloud formation template.
+ */
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum AWSResourceType {
 

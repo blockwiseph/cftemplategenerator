@@ -8,9 +8,8 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 
 /**
- * This project should be in a separate repository and package altogether.
- * However, for now, we are keeping it here. As we evolve, we can move this
- * to its own repository, and import into this project, or any other project.
+ * The main Generator class. It takes in a template supplier and template saver.
+ * It calls the supplier to get the template, and then invokes the saved with the returned template.
  */
 @AllArgsConstructor(access = AccessLevel.PACKAGE, onConstructor = @__({@Inject}))
 public class CFTemplateGenerator {
