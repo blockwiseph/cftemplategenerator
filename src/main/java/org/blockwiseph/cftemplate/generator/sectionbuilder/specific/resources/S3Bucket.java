@@ -22,6 +22,11 @@ import lombok.Getter;
 
 import com.amazonaws.http.HttpMethodName;
 
+/**
+ * Value class for S3 Bucket of cloud formation template. Only resourceId and bucketName is required.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
+ */
 @Builder
 public class S3Bucket extends ResourceSectionBuilder {
 
@@ -57,6 +62,12 @@ public class S3Bucket extends ResourceSectionBuilder {
         }});
     }
 
+    /**
+     * Value class for a single CorsRule in the list of CorsRules of the S3 Bucket in the Cloud Formation Template.
+     * AllowedMethods and AllowedOrigins are the required fields.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html
+     */
     @Builder
     public static class CorsRule extends DelegateCFSectionBuilder {
 

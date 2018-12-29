@@ -101,8 +101,8 @@ public class CFSectionBuilderFactory {
     }
 
     /**
-     * Builds a CFSectionBuilder that returns aggregates the passed in section builders a list (YML list) in the cloud formation template.
-     * Each section builder is aggregated as an individual list item.
+     * Builds a CFSectionBuilder that returns aggregates the passed in section builders a list (YML list) in the
+     * cloud formation template. Each section builder is aggregated as an individual list item.
      *
      * @param sectionBuilders varargs/array of the section builders to aggregate
      * @return a CFSectionBuilder that aggregates the passed in sectionBuilders in a cloud formation list.
@@ -112,8 +112,8 @@ public class CFSectionBuilderFactory {
     }
 
     /**
-     * Builds a CFSectionBuilder that returns aggregates the passed in section builders a list (YML list) in the cloud formation template.
-     * Each section builder is aggregated as an individual list item.
+     * Builds a CFSectionBuilder that returns aggregates the passed in section builders a list (YML list) in the
+     * cloud formation template. Each section builder is aggregated as an individual list item.
      *
      * @param sectionBuilders the section builders to aggregate
      * @return a CFSectionBuilder that aggregates the passed in sectionBuilders in a cloud formation list.
@@ -127,7 +127,8 @@ public class CFSectionBuilderFactory {
 
     /**
      * Maps a list of plain strings to a list of CFSectionBuilder.
-     * Each CFSectionBuilder in the returned list simply returns the corresponding string of the input list, using fromPlainString method.
+     * Each CFSectionBuilder in the returned list simply returns the corresponding string of the input list,
+     * using fromPlainString method.
      *
      * @param strings the list of strings to map to list of CFSectionBuilder
      * @return a list of CFSectionBuilder where each element corresponds to the element in the input string list

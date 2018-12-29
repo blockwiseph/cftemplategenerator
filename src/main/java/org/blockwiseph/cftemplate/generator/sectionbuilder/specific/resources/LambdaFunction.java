@@ -16,6 +16,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for Lambda Function of cloud formation template. Environment variables are optional.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html
+ */
 @Builder
 public class LambdaFunction extends ResourceSectionBuilder {
 

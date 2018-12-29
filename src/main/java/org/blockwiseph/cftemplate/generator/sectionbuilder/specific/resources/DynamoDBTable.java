@@ -28,6 +28,12 @@ import lombok.Getter;
 import com.amazonaws.services.dynamodbv2.model.ProjectionType;
 import com.amazonaws.services.dynamodbv2.model.StreamViewType;
 
+/**
+ * Value class for a DynamoDbTable in the cloud formation template.
+ * globalSecondaryIndexes are optional attribute.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
+ */
 @Builder
 public class DynamoDBTable extends ResourceSectionBuilder {
 
@@ -77,6 +83,12 @@ public class DynamoDBTable extends ResourceSectionBuilder {
         }});
     }
 
+    /**
+     * Value class for a single DynamoDB Global Secondary Index in the list of GSIs of the DynamoDB Table in the
+     * Cloud Formation Template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
+     */
     @Builder
     @Getter
     public static class GlobalSecondaryIndex extends DelegateCFSectionBuilder {
@@ -98,6 +110,13 @@ public class DynamoDBTable extends ResourceSectionBuilder {
         }
     }
 
+    /**
+     * Value class representing a DynamoDB key. It contains a pair of hash key and range key.
+     * This can be used to compose DynamoDB table partition key and GlobalSecondaryIndex keys.
+     * The range key is optional.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html
+     */
     @Builder
     @Getter
     public static class Key extends DelegateCFSectionBuilder {
@@ -122,6 +141,12 @@ public class DynamoDBTable extends ResourceSectionBuilder {
         }
     }
 
+    /**
+     * Value class that represents a single DynamoDB Attribute in the list of attribute defintions
+     * for a DynamoDB Table Cloud formation resource.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html
+     */
     @Builder
     @Getter
     public static class Attribute extends DelegateCFSectionBuilder {
@@ -137,6 +162,12 @@ public class DynamoDBTable extends ResourceSectionBuilder {
         }
     }
 
+    /**
+     * Value class that represents read and write capacity provisioning for a DynamoDB table, or a DynamoDB GlobalSecondaryIndex,
+     * in the DynamoDB table resource section of the cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html
+     */
     @Builder
     public static class Provision extends DelegateCFSectionBuilder {
 
@@ -152,6 +183,12 @@ public class DynamoDBTable extends ResourceSectionBuilder {
         }
     }
 
+    /**
+     * Value class that represents the DynamoDB Attribute types, to be used in the attribute schema,
+     * when defining attributes of the DynamoDB Table resource in the cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
+     */
     @AllArgsConstructor(access = AccessLevel.PRIVATE)
     public enum Type {
         STRING("S"),

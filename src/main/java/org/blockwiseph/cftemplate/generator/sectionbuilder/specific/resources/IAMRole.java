@@ -16,6 +16,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for IAM Role of cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+ */
 @Builder
 public class IAMRole extends ResourceSectionBuilder {
 
@@ -62,6 +67,12 @@ public class IAMRole extends ResourceSectionBuilder {
         );
     }
 
+    /**
+     * Value class that represents an IAM Policy Statement, that can be used within the definition of an IAM Role
+     * in the cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
+     */
     @Builder
     public static class PolicyStatement extends DelegateCFSectionBuilder {
 
