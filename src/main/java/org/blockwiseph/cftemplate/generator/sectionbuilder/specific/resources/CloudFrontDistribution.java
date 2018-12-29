@@ -15,6 +15,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for Cloud Front distribution section of cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html
+ */
 @Builder
 public class CloudFrontDistribution extends ResourceSectionBuilder {
 
@@ -53,6 +58,12 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
         );
     }
 
+
+    /**
+     * Value class for an Origin in the Cloud Front distribution config section of cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html
+     */
     @Builder
     public static class Origin extends DelegateCFSectionBuilder {
         private final String id;
@@ -70,6 +81,11 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
         }
     }
 
+    /**
+     * Value class for an Error Response in the Cloud Front distribution config section of cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html
+     */
     @Builder
     public static class ErrorResponse extends DelegateCFSectionBuilder {
         private final int errorCode;

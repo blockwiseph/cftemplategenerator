@@ -9,6 +9,11 @@ import org.blockwiseph.cftemplate.generator.sectionbuilder.DelegateCFSectionBuil
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
+/**
+ * Base class for building a cloud formation resource in the cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+ */
 @NoArgsConstructor(access = AccessLevel.PACKAGE)
 abstract class ResourceSectionBuilder extends DelegateCFSectionBuilder {
 

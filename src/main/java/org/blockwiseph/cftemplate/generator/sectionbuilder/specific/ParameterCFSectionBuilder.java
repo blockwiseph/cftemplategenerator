@@ -8,7 +8,7 @@ import org.blockwiseph.cftemplate.generator.sectionbuilder.DelegateCFSectionBuil
 import lombok.Builder;
 
 /**
- * Value class for Parameters Section of Cloud formation template.
+ * Value class for a single parameter of the Parameters Section of Cloud formation template.
  *
  * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
  */

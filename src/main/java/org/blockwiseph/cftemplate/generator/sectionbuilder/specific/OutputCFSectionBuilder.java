@@ -8,7 +8,7 @@ import org.blockwiseph.cftemplate.generator.sectionbuilder.DelegateCFSectionBuil
 import lombok.Builder;
 
 /**
- * Value class for Outputs Section of Cloud formation template.
+ * Value class for one output of the Outputs Section of Cloud formation template.
  *
  * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
  */

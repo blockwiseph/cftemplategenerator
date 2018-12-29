@@ -10,6 +10,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for a CognitoUserPool Client in the cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
+ */
 @Builder
 public class CognitoUserPoolClient extends ResourceSectionBuilder {
 

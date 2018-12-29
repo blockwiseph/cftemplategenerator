@@ -14,6 +14,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for a CognitoIdentityPool in the cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
+ */
 @Builder
 public class CognitoIdentityPool extends ResourceSectionBuilder {
 
@@ -38,6 +43,12 @@ public class CognitoIdentityPool extends ResourceSectionBuilder {
         );
     }
 
+    /**
+     * Value class for a single cognito identity provider in the identity provider list of the Cognito Identity Pool
+     * cloud formation section.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html
+     */
     @Builder
     public static class CognitoIdentityProvider extends DelegateCFSectionBuilder {
 

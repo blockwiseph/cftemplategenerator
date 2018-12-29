@@ -15,6 +15,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for a CognitoUserPool in the cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html
+ */
 @Builder
 public class CognitoUserPool extends ResourceSectionBuilder {
 
@@ -63,6 +68,11 @@ public class CognitoUserPool extends ResourceSectionBuilder {
         );
     }
 
+    /**
+     * Value class for the PasswordPolicy in the CognitoUserPool in the cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html
+     */
     @Builder
     public static class PasswordPolicy extends DelegateCFSectionBuilder {
         private final int minimumLength;
@@ -81,6 +91,11 @@ public class CognitoUserPool extends ResourceSectionBuilder {
         }
     }
 
+    /**
+     * Value class for the AttributeSchema of a single user attribute in the CognitoUserPool in the cloud formation template.
+     *
+     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html
+     */
     @Builder(toBuilder = true)
     public static class AttributeSchema extends DelegateCFSectionBuilder {
         private final String name;
