@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.blockwiseph</groupId>
+    <groupId>com.github.blockwiseph</groupId>
     <artifactId>cftemplategenerator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -24,7 +24,7 @@
         <developer>
             <name>Hiten Vasnani</name>
             <email>hvas89@gmail.com</email>
-            <organization>org.blockwiseph</organization>
+            <organization>com.github.blockwiseph</organization>
             <organizationUrl>https://github.com/blockwiseph</organizationUrl>
         </developer>
     </developers>
