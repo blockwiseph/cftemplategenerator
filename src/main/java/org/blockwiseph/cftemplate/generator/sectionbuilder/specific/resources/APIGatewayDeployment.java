@@ -8,6 +8,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for APIGateway deployment resource of cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
+ */
 @Builder
 public class APIGatewayDeployment extends ResourceSectionBuilder {
 

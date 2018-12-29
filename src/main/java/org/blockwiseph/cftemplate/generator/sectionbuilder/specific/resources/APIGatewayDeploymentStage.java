@@ -9,6 +9,13 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for APIGateway deployment stage of cloud formation template.
+ * This can be used hand in hand with
+ * @see org.blockwiseph.cftemplate.generator.sectionbuilder.specific.resources.APIGatewayDeployment
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
+ */
 @Builder
 public class APIGatewayDeploymentStage extends ResourceSectionBuilder {
 

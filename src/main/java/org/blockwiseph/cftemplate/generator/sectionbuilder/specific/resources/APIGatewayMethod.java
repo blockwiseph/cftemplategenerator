@@ -23,6 +23,12 @@ import lombok.Getter;
 
 import com.amazonaws.http.HttpMethodName;
 
+/**
+ * Value class for defining APIGateway method resource of cloud formation template.
+ * OperationName, authorizerId, integrationHttpMethod, lambdaArn are optional fields.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
+ */
 @Builder
 public class APIGatewayMethod extends ResourceSectionBuilder {
 
@@ -96,6 +102,11 @@ public class APIGatewayMethod extends ResourceSectionBuilder {
         }});
     }
 
+    /**
+     * Enum representing APIGateway method authorization type.
+     *
+     * @link https://docs.aws.amazon.com/apigateway/api-reference/resource/method/#authorizationType
+     */
     public enum AuthorizationType {
         NONE,
         AWS_IAM,
@@ -103,12 +114,22 @@ public class APIGatewayMethod extends ResourceSectionBuilder {
         COGNITO_USER_POOLS,
     }
 
+    /**
+     * Enum representing APIGateway method integration type.
+     *
+     * @link https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/#type
+     */
     public enum IntegrationType {
         AWS,
         AWS_PROXY,
         MOCK
     }
 
+    /**
+     * Enum representing APIGateway method passthrough behavior.
+     *
+     * @link https://docs.aws.amazon.com/apigateway/api-reference/link-relation/integration-put/#passthroughBehavior
+     */
     public enum PassthroughBehavior {
         WHEN_NO_MATCH,
         WHEN_NO_TEMPLATES,

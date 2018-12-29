@@ -13,6 +13,13 @@ import org.blockwiseph.cftemplate.generator.sectionbuilder.CFSectionBuilder;
 import org.blockwiseph.cftemplate.generator.sectionbuilder.DelegateCFSectionBuilder;
 import lombok.Builder;
 
+/**
+ * Value class representing an APIResponse Definition in a cloud formation template.
+ * This is used for integration responses and method responses in
+ * @see org.blockwiseph.cftemplate.generator.sectionbuilder.specific.resources.APIGatewayMethod
+ *
+ * All fields except statusCode are optional.
+ */
 @Builder
 public class APIResponse extends DelegateCFSectionBuilder {
 

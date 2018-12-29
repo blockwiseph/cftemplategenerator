@@ -10,6 +10,11 @@ import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
+/**
+ * Value class for APIGatewayResource of cloud formation template. This represents an API Entity.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
+ */
 @Builder
 @EqualsAndHashCode
 public class APIGatewayResource extends ResourceSectionBuilder {

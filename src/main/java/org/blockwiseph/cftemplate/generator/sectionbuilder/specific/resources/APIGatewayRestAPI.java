@@ -9,6 +9,11 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 
+/**
+ * Value class for APIGateway RestAPI of cloud formation template.
+ *
+ * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html
+ */
 @Builder
 public class APIGatewayRestAPI extends ResourceSectionBuilder {
 
