@@ -17,7 +17,9 @@ To make changes and deploy to repository, the following need to be done:
 * Make sure you have a JIRA account, that is authorized to deploy to our maven central repo.
 * Add JIRA credentials to `settings.xml` of maven file based on https://central.sonatype.org/pages/apache-maven.html
 * Install gpg on your machine, and make sure a key is generated.
-* Execute `gpg-keygen` and add gpg credentials to settings.xml based on above link
+* To Generate a key, Execute `gpg-keygen` and add gpg credentials to settings.xml based on above link
+* Upload key to ubuntu keyserver by `gpg --keyserver hkp://keyserver.ubuntu.com --send-keys YOUR_KEY_ID`
+
 
 To deploy:
 
