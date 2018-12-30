@@ -14,7 +14,7 @@ import lombok.Getter;
  * This can be used hand in hand with
  * @see org.blockwiseph.cftemplate.generator.sectionbuilder.specific.resources.APIGatewayDeployment
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html">AWS APIGateway Deployment Stage Documentation</a>
  */
 @Builder
 public class APIGatewayDeploymentStage extends ResourceSectionBuilder {

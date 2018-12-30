@@ -14,7 +14,7 @@ import lombok.Getter;
 /**
  * Value class for SNS Topic of cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html">AWS SNS Topic Documentation</a>
  */
 @Builder
 public class SNSTopic extends ResourceSectionBuilder {

@@ -17,7 +17,7 @@ import lombok.Getter;
 /**
  * Value class for APIGateway authorizer resource of cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html">AWS APIGateway Authorizer Documentation</a>
  */
 @Builder
 public class APIGatewayAuthorizer extends ResourceSectionBuilder {
@@ -50,7 +50,7 @@ public class APIGatewayAuthorizer extends ResourceSectionBuilder {
     /**
      * Enum Representing different AuthorizerType.
      *
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type">AWS APIGateway AuthorizerType Documentation</a>
      */
     public enum AuthorizerType {
         COGNITO_USER_POOLS,

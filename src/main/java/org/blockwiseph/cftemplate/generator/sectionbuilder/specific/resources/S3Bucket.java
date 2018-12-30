@@ -25,7 +25,7 @@ import com.amazonaws.http.HttpMethodName;
 /**
  * Value class for S3 Bucket of cloud formation template. Only resourceId and bucketName is required.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html">AWS S3 Bucket Documentation</a>
  */
 @Builder
 public class S3Bucket extends ResourceSectionBuilder {
@@ -66,7 +66,7 @@ public class S3Bucket extends ResourceSectionBuilder {
      * Value class for a single CorsRule in the list of CorsRules of the S3 Bucket in the Cloud Formation Template.
      * AllowedMethods and AllowedOrigins are the required fields.
      *
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html">AWS S3 Bucket CorsRule Documentation</a>
      */
     @Builder
     public static class CorsRule extends DelegateCFSectionBuilder {

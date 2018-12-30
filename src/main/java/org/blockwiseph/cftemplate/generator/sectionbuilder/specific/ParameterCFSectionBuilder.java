@@ -10,7 +10,7 @@ import lombok.Builder;
 /**
  * Value class for a single parameter of the Parameters Section of Cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">AWS CloudFormation Parameters Documentation</a>
  */
 @Builder
 public class ParameterCFSectionBuilder extends DelegateCFSectionBuilder {

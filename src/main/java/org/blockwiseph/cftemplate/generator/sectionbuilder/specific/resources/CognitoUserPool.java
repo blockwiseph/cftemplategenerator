@@ -18,7 +18,7 @@ import lombok.Getter;
 /**
  * Value class for a CognitoUserPool in the cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html">AWS CognitoUserPool Documentation</a>
  */
 @Builder
 public class CognitoUserPool extends ResourceSectionBuilder {
@@ -71,7 +71,7 @@ public class CognitoUserPool extends ResourceSectionBuilder {
     /**
      * Value class for the PasswordPolicy in the CognitoUserPool in the cloud formation template.
      *
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html">AWS CognitoUserPool PasswordPolicy Documentation</a>
      */
     @Builder
     public static class PasswordPolicy extends DelegateCFSectionBuilder {
@@ -94,7 +94,7 @@ public class CognitoUserPool extends ResourceSectionBuilder {
     /**
      * Value class for the AttributeSchema of a single user attribute in the CognitoUserPool in the cloud formation template.
      *
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html">AWS CognitoUserPool Schema Attribute Documentation</a>
      */
     @Builder(toBuilder = true)
     public static class AttributeSchema extends DelegateCFSectionBuilder {

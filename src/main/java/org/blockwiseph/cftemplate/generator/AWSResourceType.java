@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
  * Enum containing the different AWS Resource types that can be put in a cloud formation template.
  * The types here are the ones supported by the template generator.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html for more.
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">AWS CloudFormation ResourceType Documentation</a>
  */
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum AWSResourceType {

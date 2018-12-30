@@ -13,7 +13,7 @@ import lombok.Getter;
 /**
  * Value class for APIGatewayResource of cloud formation template. This represents an API Entity.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html">AWS APIGateway Resource Documentation</a>
  */
 @Builder
 @EqualsAndHashCode

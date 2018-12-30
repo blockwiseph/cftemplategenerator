@@ -27,7 +27,7 @@ import com.amazonaws.http.HttpMethodName;
  * Value class for defining APIGateway method resource of cloud formation template.
  * OperationName, authorizerId, integrationHttpMethod, lambdaArn are optional fields.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html">AWS APIGateway Method Documentation</a>
  */
 @Builder
 public class APIGatewayMethod extends ResourceSectionBuilder {
@@ -105,7 +105,7 @@ public class APIGatewayMethod extends ResourceSectionBuilder {
     /**
      * Enum representing APIGateway method authorization type.
      *
-     * @link https://docs.aws.amazon.com/apigateway/api-reference/resource/method/#authorizationType
+     * @see <a href="https://docs.aws.amazon.com/apigateway/api-reference/resource/method/#authorizationType">AWS APIGateway Method AuthorizationType Documentation</a>
      */
     public enum AuthorizationType {
         NONE,
@@ -117,7 +117,7 @@ public class APIGatewayMethod extends ResourceSectionBuilder {
     /**
      * Enum representing APIGateway method integration type.
      *
-     * @link https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/#type
+     * @see <a href="https://docs.aws.amazon.com/apigateway/api-reference/resource/integration/#type">AWS APIGateway Method IntegrationType Documentation</a>
      */
     public enum IntegrationType {
         AWS,
@@ -128,7 +128,7 @@ public class APIGatewayMethod extends ResourceSectionBuilder {
     /**
      * Enum representing APIGateway method passthrough behavior.
      *
-     * @link https://docs.aws.amazon.com/apigateway/api-reference/link-relation/integration-put/#passthroughBehavior
+     * @see <a href="https://docs.aws.amazon.com/apigateway/api-reference/link-relation/integration-put/#passthroughBehavior">AWS APIGateway Method PassthroughBehavior Documentation</a>
      */
     public enum PassthroughBehavior {
         WHEN_NO_MATCH,

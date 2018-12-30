@@ -14,7 +14,7 @@ import lombok.Getter;
  * Value class for Cognito IdentityPool Role Attachment section of cloud formation template.
  * This is to attach authenticated and unauthenticated IAM Roles to the identity pool.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html">AWS CognitoIdentityPoolRoleAttachment Documentation</a>
  */
 @Builder
 public class CognitoIdentityPoolAttachment extends ResourceSectionBuilder {

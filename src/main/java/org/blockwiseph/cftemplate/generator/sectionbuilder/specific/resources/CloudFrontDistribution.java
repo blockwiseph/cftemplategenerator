@@ -18,7 +18,7 @@ import lombok.Getter;
 /**
  * Value class for Cloud Front distribution section of cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html">AWS CloudFrontDistribution Documentation</a>
  */
 @Builder
 public class CloudFrontDistribution extends ResourceSectionBuilder {
@@ -62,7 +62,7 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
     /**
      * Value class for an Origin in the Cloud Front distribution config section of cloud formation template.
      *
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html">AWS CloudFrontDistribution Origin Documentation</a>
      */
     @Builder
     public static class Origin extends DelegateCFSectionBuilder {
@@ -84,7 +84,7 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
     /**
      * Value class for an Error Response in the Cloud Front distribution config section of cloud formation template.
      *
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html">AWS CloudFrontDistribution CustomErrorResponse Documentation</a>
      */
     @Builder
     public static class ErrorResponse extends DelegateCFSectionBuilder {

@@ -1,6 +1,7 @@
 package org.blockwiseph.cftemplate.generator;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.function.Consumer;
@@ -16,7 +17,7 @@ class CFTemplateFileSaver implements Consumer<String> {
     @Override
     public void accept(String s) {
         try {
-            Files.write(Paths.get(cfTemplateFilePath), s.getBytes());
+            Files.write(Paths.get(cfTemplateFilePath), s.getBytes(Charset.defaultCharset()));
         } catch (IOException e) {
             throw new RuntimeException("Unable to save yaml file");
         }

@@ -12,7 +12,7 @@ import lombok.Getter;
 /**
  * Value class for APIGateway RestAPI of cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html">AWS APIGateway RestAPI Documentation</a>
  */
 @Builder
 public class APIGatewayRestAPI extends ResourceSectionBuilder {

@@ -10,7 +10,7 @@ import lombok.Builder;
 /**
  * Value class for one output of the Outputs Section of Cloud formation template.
  *
- * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
+ * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html">AWS CloudFormation Outputs Documentation</a>
  */
 @Builder
 public class OutputCFSectionBuilder extends DelegateCFSectionBuilder {

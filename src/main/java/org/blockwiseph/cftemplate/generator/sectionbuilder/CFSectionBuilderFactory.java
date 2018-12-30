@@ -26,7 +26,7 @@ public class CFSectionBuilderFactory {
      *
      * @param description the value of the description of the cloud formation template
      * @return a CFSectionBuilder that builds the description section of the cloud formation template.
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-description-structure.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-description-structure.html">AWS CloudFormation Description Documentation</a>
      */
     public static CFSectionBuilder description(final String description) {
         return singleLine("Description", description);
@@ -37,7 +37,7 @@ public class CFSectionBuilderFactory {
      *
      * @param parameterCFSectionBuilders varargs/array of the parameters to include in the cloud formation template.
      * @return a CFSectionBuilder that builds the parameters section of the cloud formation template with the given outputs.
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">AWS CloudFormation Parameters Documentation</a>
      */
     public static CFSectionBuilder parameters(final ParameterCFSectionBuilder... parameterCFSectionBuilders) {
         return titleWithAggregateBuilders("Parameters", parameterCFSectionBuilders);
@@ -48,7 +48,7 @@ public class CFSectionBuilderFactory {
      *
      * @param resourcesBuilders varargs/array of the resource builders to include in the cloud formation template.
      * @return a CFSectionBuilder that builds the resources section of the cloud formation template with the given resources.
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html">AWS CloudFormation Resources Documentation</a>
      */
     public static CFSectionBuilder resources(final CFSectionBuilder... resourcesBuilders) {
         return titleWithAggregateBuilders("Resources", resourcesBuilders);
@@ -59,7 +59,7 @@ public class CFSectionBuilderFactory {
      *
      * @param outputCFSectionBuilders varargs/array of the outputs to include in the cloud formation template.
      * @return a CFSectionBuilder that builds the parameters section of the cloud formation template with the given parameters.
-     * @link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html">AWS CloudFormation Outputs Documentation</a>
      */
     public static CFSectionBuilder outputs(final OutputCFSectionBuilder... outputCFSectionBuilders) {
         return titleWithAggregateBuilders("Outputs", outputCFSectionBuilders);
