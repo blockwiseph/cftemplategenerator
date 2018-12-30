@@ -1,7 +1,9 @@
 # cftemplategenerator
 Java based Generator for Cloud formation template
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.blockwiseph/cftemplategenerator/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.github.blockwiseph/cftemplategenerator)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.blockwiseph/cftemplategenerator/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.blockwiseph/cftemplategenerator)
+
+[![Javadocs](http://www.javadoc.io/badge/com.github.blockwiseph/cftemplategenerator.svg)](http://www.javadoc.io/doc/com.github.blockwiseph/cftemplategenerator)
 
 
 ### To Use this cloud formation template generator:
