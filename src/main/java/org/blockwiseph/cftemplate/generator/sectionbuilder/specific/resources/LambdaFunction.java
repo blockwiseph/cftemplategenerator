@@ -47,7 +47,7 @@ public class LambdaFunction extends ResourceSectionBuilder {
         return aggregating(new ArrayList<CFSectionBuilder>() {{
             add(titleWithAggregateBuilders("Code",
                     singleLine("S3Bucket", s3Bucket),
-                    titleWithAggregateBuilders("S3Key", fromPlainString(s3Key))
+                    singleLine("S3Key", s3Key)
             ));
             add(singleLine("Handler", handler));
             add(singleLine("Runtime", runtime));
