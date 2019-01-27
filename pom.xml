@@ -6,7 +6,7 @@
 
     <groupId>com.github.blockwiseph</groupId>
     <artifactId>cftemplategenerator</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <name>CF Template Generator</name>

@@ -31,7 +31,6 @@ To deploy:
 
 For Release Deployment:
 
+* run the command `export GPG_TTY=$(tty)`
 * `mvn versions:set -DnewVersion=1.0.0` this will modify pom.xml and other places. Commit this change to Git.
 * run `mvn clean deploy -P release`
-
-

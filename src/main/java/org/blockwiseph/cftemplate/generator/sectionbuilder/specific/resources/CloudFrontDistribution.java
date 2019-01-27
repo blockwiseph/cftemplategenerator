@@ -54,7 +54,7 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
                         singleLine("QueryString", "false")
                 ),
                 singleLine("TargetOriginId", targetOriginId),
-                singleLine("ViewerProtocolPolicy", "allow-all")
+                singleLine("ViewerProtocolPolicy", "redirect-to-https")
         );
     }
 
