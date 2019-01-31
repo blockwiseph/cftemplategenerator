@@ -29,6 +29,7 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
     private final String resourceId;
 
     private final List<Origin> origins;
+    private final String aliases;
     private final List<ErrorResponse> errorResponses;
     private final String rootObject;
     private final String targetOriginId;
@@ -42,6 +43,7 @@ public class CloudFrontDistribution extends ResourceSectionBuilder {
     @Override
     CFSectionBuilder resourceProperties() {
         return titleWithAggregateBuilders("DistributionConfig", aggregating(new ArrayList<CFSectionBuilder>() {{
+            add(singleLine("Aliases", aliases));
             add(titleWithAggregateBuilders("Origins", listOf(origins)));
             add(titleWithAggregateBuilders("CustomErrorResponses", listOf(errorResponses)));
             add(titleWithAggregateBuilders("DefaultCacheBehavior", getDefaultCacheBehavior()));
