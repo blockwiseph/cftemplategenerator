@@ -21,6 +21,8 @@ import static org.blockwiseph.cftemplate.generator.sectionbuilder.CFSectionBuild
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class CFGeneratorUtils {
 
+    public static final String NO_VALUE = "Ref: \"AWS::NoValue\"";
+
     private static final int YAML_INDENT_SIZE = 2;
 
     /**
@@ -45,6 +47,25 @@ public class CFGeneratorUtils {
     }
 
     /**
+     * Generates a cloud formation field using the Fn::If function. It uses the conditionId as the condition, and plugs
+     * valueIfTrue and valueIfFalse as the true and false values.
+     *
+     * @param conditionId  the condition Id
+     * @param valueIfTrue  the value if the condition is true
+     * @param valueIfFalse the value if the condition is false
+     * @return a string representing the conditional value using cloud formation Fn::If function
+     */
+    public static String conditionalValue(final String conditionId, final String valueIfTrue, final String valueIfFalse) {
+        return "\n" + ymlIndent(
+                titleWithAggregateBuilders("Fn::If", listOf(
+                        fromPlainString(conditionId),
+                        fromPlainString(valueIfTrue),
+                        fromPlainString(valueIfFalse)
+                )).getSectionContents()
+        );
+    }
+
+    /**
      * Generates a cloud formation field using the Fn::Join function. It joins the substrings with the provided delimiter.
      *
      * @param delimiter  the delimiter to use when joining using Fn::Join
@@ -58,6 +79,17 @@ public class CFGeneratorUtils {
                         listOf(fromPlainStrings(ImmutableList.copyOf(substrings)))
                 )).getSectionContents()
         );
+    }
+
+    /**
+     * Generates a !Equals function to compare resource reference to a value
+     *
+     * @param resourceId the resource id
+     * @param value      the value to compare to using !Equals
+     * @return !Equals function to compare resource reference to a value
+     */
+    public static String resourceEquals(final String resourceId, final String value) {
+        return String.format("!Equals [ %s, %s ]", referencing(resourceId), value);
     }
 
     /**

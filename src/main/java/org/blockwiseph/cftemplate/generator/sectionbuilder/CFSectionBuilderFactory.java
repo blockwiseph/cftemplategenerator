@@ -1,14 +1,15 @@
 package org.blockwiseph.cftemplate.generator.sectionbuilder;
 
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
-import org.blockwiseph.cftemplate.generator.sectionbuilder.specific.OutputCFSectionBuilder;
-import org.blockwiseph.cftemplate.generator.sectionbuilder.specific.ParameterCFSectionBuilder;
 import com.google.common.collect.ImmutableList;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import org.blockwiseph.cftemplate.generator.sectionbuilder.specific.ConditionCFSectionBuilder;
+import org.blockwiseph.cftemplate.generator.sectionbuilder.specific.OutputCFSectionBuilder;
+import org.blockwiseph.cftemplate.generator.sectionbuilder.specific.ParameterCFSectionBuilder;
+
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Contains factory methods to create instances of
@@ -41,6 +42,17 @@ public class CFSectionBuilderFactory {
      */
     public static CFSectionBuilder parameters(final ParameterCFSectionBuilder... parameterCFSectionBuilders) {
         return titleWithAggregateBuilders("Parameters", parameterCFSectionBuilders);
+    }
+
+    /**
+     * Returns a CFSectionBuilder for the conditions section of the cloud formation template.
+     *
+     * @param conditionCFSectionBuilders varargs/array of the conditions to include in the cloud formation template.
+     * @return a CFSectionBuilder that builds the conditions section of the cloud formation template with the given outputs.
+     * @see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html">AWS CloudFormation Conditions Documentation</a>
+     */
+    public static CFSectionBuilder conditions(final ConditionCFSectionBuilder... conditionCFSectionBuilders) {
+        return titleWithAggregateBuilders("Conditions", conditionCFSectionBuilders);
     }
 
     /**
